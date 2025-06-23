@@ -1,0 +1,221 @@
+.mobileContainer {
+  display: none;
+  /* position: absolute; */
+  /* left: -120%; */
+  transition: all 0.5s ease-in-out;
+}
+.burgerIcon {
+  display: none;
+}
+
+.open{
+    left: 0;
+}
+
+.hide{
+    left:-120% ;
+}
+.menu{
+  display: none;
+}
+
+.container {
+  width: 20vw;
+  position: absolute;
+  height: 100%;
+  border: 1px solid transparent;
+  backdrop-filter: blur(100px);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: #17171f;
+  box-shadow: 0 1px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 0 30px 30px 0;
+}
+
+.clinicDetails h1 {
+  user-select: none;
+  color: #fff;
+  font-family: NunitoLight;
+  font-weight: 100;
+}
+
+.navContainer ul {
+  list-style: none;
+}
+
+.navContainer ul li {
+  margin-top: 12%;
+  padding: 1rem;
+  list-style: none;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.navContainer ul a {
+  display: block;
+  color: gray;
+}
+
+.navContainer ul a li {
+  /* background-color: red; */
+  text-align: center;
+  width: 70%;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(181, 181, 181);
+  border-radius: 30px;
+}
+
+.active {
+  color: white;
+  transform: scale(1.1);
+}
+.active li {
+  width: 100%;
+  background-color: white;
+}
+.active li h3 {
+  color: #17171f;
+}
+.active li h3:hover {
+  color: #17171f;
+}
+
+.navContainer ul a li:hover {
+  color: white;
+  border: 0.5px solid aliceblue;
+  border-radius: 15px;
+  transform: scale(1.1);
+}
+.navContainer ul a {
+  text-decoration: none;
+}
+
+.userData {
+  margin-bottom: 15%;
+  color: white;
+  font-family: NunitoLight, sans-serif;
+  font-weight: 100;
+}
+
+.button {
+  height: 50px;
+  width: 200px;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid rgb(233, 53, 53);
+  overflow: hidden;
+  border-radius: 30px;
+  color: #333;
+  transition: all 0.5s ease-in-out;
+}
+
+.btntxt {
+  font-family: NunitoLight;
+  color: white;
+  z-index: 1;
+  font-weight: 800;
+  letter-spacing: 4px;
+  font-family: NunitoLight;
+}
+
+.type1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(233, 53, 53);
+  border-radius: 30px;
+  visibility: hidden;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+}
+
+.button:hover {
+  color: #fff;
+  border: none;
+}
+
+.type1:hover::after {
+  visibility: visible;
+  transform: scale(100) translateX(2px);
+}
+
+@media screen and (width < 580px) {
+  .menu{
+    display: block;
+    position: absolute;
+    top: 9%;
+    left: 10%;
+  }
+  .container {
+    display: none;
+  }
+  .mobileContainer {
+    z-index: 100;
+    /* display: block; */
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    /* left: 0; */
+    height: 100%;
+    border: 1px solid transparent;
+    backdrop-filter: blur(100px);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #17171f;
+    box-shadow: 0 1px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 0 30px 30px 0;
+  }
+  .mobContainer ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mobContainer ul a {
+    text-decoration: none;
+  }
+  
+  .mobContainer ul li {
+    margin-top: 12%;
+    padding: 1rem;
+    list-style: none;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .mobContainer ul a li {
+    /* background-color: red; */
+    text-align: center;
+    width: 70%;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+    color: rgb(181, 181, 181);
+    border-radius: 30px;
+  }
+  
+  .burgerIcon {
+    display: block;
+  }
+  .xmark{
+    position: absolute;
+    right: 10%;
+    top: 6%;
+  }
+
+  .show{
+    display: block;
+  }
+  .hidden{
+    display: none;
+  }
+}

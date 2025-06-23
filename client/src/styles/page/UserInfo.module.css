@@ -1,0 +1,78 @@
+.wrapper{
+    margin-left: 24vw;
+    padding-top: 2%;
+}
+.container{
+    border-radius: 30px;
+    margin-right: 5%;
+    height: 80vh;
+    padding: 3rem;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 25px rgba(0, 0, 0, 0.2);
+}
+
+.container h1,h2{
+    user-select: none;
+    font-family: NunitoLight;
+    font-weight: 100;
+}
+
+.subHead{
+    user-select: none;
+    font-family: NunitoLight;
+    font-weight: 100;
+    font-style: italic;
+    text-align: left;
+}
+.container h2{
+    display: flex;
+    gap: 10px;
+}
+.container p{
+    text-align: start;
+    font-family: Ubuntu,sans-serif;
+    color: gray;
+    font-style: italic;
+}
+
+@media screen and (max-width: 580px) {
+    .wrapper {
+        margin-left: 0vw;
+        padding-left: 5%;
+        padding-top: 8%;
+    }
+
+    .container {
+        font-size: 4vw;
+        border-radius: 30px;
+        margin-right: 5%;
+        min-height: 65vh;
+        padding: 3rem;
+        overflow: scroll;
+        border: 1px solid transparent;
+        box-shadow: 0 1px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .subHead {
+        user-select: none;
+        font-family: NunitoLight;
+        font-weight: 100;
+        font-style: italic;
+        text-align: left;
+    }
+    .container h1{
+        margin-top: 15%;
+    }
+    .container h2 {
+        height: 100px;
+        display: flex;
+        gap: 0px;
+    }
+
+    .container p {
+        text-align: start;
+        font-family: Ubuntu, sans-serif;
+        color: gray;
+        font-style: italic;
+    }
+}

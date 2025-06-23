@@ -1,0 +1,265 @@
+.wrapper {
+  margin-left: 24vw;
+  padding-top: 2%;
+}
+.container {
+  overflow: auto;
+  border-radius: 30px;
+  margin-right: 5%;
+  height: 80vh;
+  padding: 3rem;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 25px rgba(0, 0, 0, 0.2);
+}
+
+.container h1 {
+  user-select: none;
+  font-family: NunitoLight;
+  font-weight: 100;
+}
+
+.container p {
+  text-align: start;
+  font-family: Ubuntu, sans-serif;
+  color: gray;
+  font-style: italic;
+}
+
+.checkNoBox input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.checkNoBox input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.checkNoBox {
+  font-family: NunitoReg;
+  width: 40%;
+  margin-left: calc(20% + 20px);
+  height: 40vh;
+  border-radius: 30px;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 1px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 10%;
+}
+
+.loader {
+  height: 90%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.checkNoBox label {
+  font-size: 1.3rem;
+}
+
+.search {
+  height: 5vh;
+  width: 15vw;
+  outline: none;
+  padding-left: 1.2rem;
+  border-radius: 10px;
+  border: 1.5px solid gray;
+  transition: all 0.2s ease-in-out;
+}
+
+.search:focus {
+  transition: all 0.2 ease-in-out;
+  border: 1.5px solid black;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 1.1rem;
+}
+
+.signupMessage {
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.signupMessage:hover {
+  color: #218553;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn {
+  width: 150%;
+  position: relative;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 2.5em;
+  display: inline-block;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: black;
+  background-color: #35cb80;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.addPatient {
+  width: 90%;
+  height: 74vh;
+  margin: 2% 0 2% 3%;
+  border-radius: 30px;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 1px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  overflow: auto;
+}
+
+.addContainer {
+  width: 80%;
+  margin: auto;
+  height: 80%;
+}
+
+.formContainer {
+  margin-top: 2%;
+  font-family: "NunitoLight", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  margin-bottom: 5px;
+}
+
+.formGroup textarea {
+  resize: none;
+}
+
+.formGroup input,
+select,
+textarea {
+  outline: none;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.changeText {
+  margin: 3% 0;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+.changeText:hover {
+  color: #35cb80;
+}
+
+@media screen and (width < 580px) {
+  .wrapper {
+    margin-left: 0vw;
+    padding-left: 5%;
+    padding-top: 8%;
+  }
+  .container {
+    font-size: 4vw;
+    border-radius: 30px;
+    margin-right: 5%;
+    height: 75vh;
+    padding: 3rem;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .container h1,
+  h2 {
+    user-select: none;
+    font-family: NunitoLight;
+    font-weight: 100;
+  }
+
+  .subHead {
+    user-select: none;
+    font-family: NunitoLight;
+    font-weight: 100;
+    font-style: italic;
+    text-align: left;
+  }
+  .container h2 {
+    display: flex;
+    gap: 10px;
+  }
+  .container p {
+    text-align: start;
+    font-family: Ubuntu, sans-serif;
+    color: gray;
+    font-style: italic;
+  }
+  .formGroup textarea {
+    width: 120%;
+  }
+  .btn {
+    width: 120%;
+    position: relative;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 2vw 3.5vw;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all 0.2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: #35cb80;
+    color: white;
+    cursor: pointer;
+  }
+}

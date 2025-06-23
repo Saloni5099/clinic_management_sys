@@ -1,0 +1,193 @@
+.wrapper {
+  margin-left: 24vw;
+  padding-top: 2%;
+}
+.container {
+  overflow: auto;
+  border-radius: 30px;
+  margin-right: 5%;
+  height: 80vh;
+  padding: 3rem;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 25px rgba(0, 0, 0, 0.2);
+}
+
+.container h1 {
+  user-select: none;
+  font-family: NunitoLight;
+  font-weight: 100;
+}
+
+.loader_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.checkNoBox {
+  font-family: NunitoReg;
+  width: 40%;
+  margin-left: calc(20% + 20px);
+  height: 65vh;
+  border-radius: 30px;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 1px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+.formContainer {
+  font-family: "NunitoLight", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  margin-bottom: 5px;
+}
+
+.formGroup textarea {
+  resize: none;
+}
+
+.formGroup input,
+select,
+textarea {
+  outline: none;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn {
+  position: relative;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 2.5em;
+  display: inline-block;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: black;
+  background-color: #35cb80;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+@media screen and (width < 580px) {
+  .wrapper {
+    margin-left: 0vw;
+    padding-left: 5%;
+    padding-top: 8%;
+  }
+  .container {
+    font-size: 4vw;
+    border-radius: 30px;
+    margin-right: 5%;
+    height: 75vh;
+    padding: 3rem;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 25px rgba(0, 0, 0, 0.2);
+  }
+  .formGroup input,
+  select,
+  textarea {
+    outline: none;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150%;
+  }
+  .btn {
+    position: relative;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 3vw 5vw;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all 0.2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: #35cb80;
+    color: white;
+    cursor: pointer;
+    z-index: 0;
+  }
+  
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+  
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+}
