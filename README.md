@@ -11,11 +11,11 @@ A Seemless communication with Doctor and Receptionist Using MERN Stack
 # Installation
 1.Clone the repository:
 
-    git clone https://github.com/Bhaski47/Clinic-Management
+    git clone https://github.com/Saloni5099/clinic_management_sys
 
 2.Navigate to the project folder:
 
-    cd Clinic-Management
+    cd clinic_management_sys
 
 3.Navigate to the frontend folder:
 
@@ -36,7 +36,7 @@ A Seemless communication with Doctor and Receptionist Using MERN Stack
 Start the application:
   You need to start the application in both server and client simultaneously
   By using the following command in both client and server folder
-    npm start
+    npm run start
 
 # Workflow
 
@@ -60,8 +60,8 @@ Start the application:
 ### 1. Receptionist Login:
 
 - Login to the receptionist panel using the credentials:
-  - Email: `receptionist@careclinic.com`
-  - Password: `receptionist@careclinic.com`
+  - Email: `yash1@gmail.com`
+  - Password: `Yash@123`
 - Navigate to the patient registration section.
 
 ### 2. Generate Token:
@@ -73,8 +73,8 @@ Start the application:
 ### 3. Doctor Login:
 
 - Access the doctor's panel with the following credentials:
-  - Email: `doctor@careclinic.com`
-  - Password: `doctor@careclinic.com`
+  - Email: `doc1@gmail.com`
+  - Password: `Yash@123`
 
 ### 4. Retrieve Patient Information:
 
